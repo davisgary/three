@@ -72,8 +72,8 @@ export default function Donut() {
 
     const animate = () => {
       requestAnimationFrame(animate);
-      rotation.x += (targetRotation.x - rotation.x) * 0.05;
-      rotation.y += (targetRotation.y - rotation.y) * 0.05;
+      rotation.x += (targetRotation.x - rotation.x) * 0.07;
+      rotation.y += (targetRotation.y - rotation.y) * 0.07;
       mesh.rotation.x = rotation.x;
       mesh.rotation.y = rotation.y;
       renderer.render(scene, camera);
